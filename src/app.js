@@ -5,7 +5,8 @@ import routes from './routes/index.routes.js';
 import dotenv from 'dotenv';
 
 dotenv.config();
-const uri = process.env.DB_URI;
+//const uri = process.env.DB_URI;
+const uri = process.env.MONGODB_URI;
 
 const runApp = async () => {
   const app = express();
