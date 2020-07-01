@@ -21,7 +21,7 @@ const runApp = async () => {
       useFindAndModify: false
     });
 
-  app.listen(3000, () => {
+  app.listen(process.env.PORT || 3000, () => {
     console.log('servidor iniciado na portal 3000.');
   })
 };
